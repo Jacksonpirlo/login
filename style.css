@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+	flex-wrap: wrap;
+	background: #823BFF;
+	font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+::placeholder {
+	color: black;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	padding: 3em;
+	border-radius: 20px;
+	transition: all 1s ease;
+	border-color: #6A17FB;
+}
+
+form:hover {
+	margin-bottom: 1em;
+	box-shadow: 10px 10px 10px 1px #6F1CFF;
+}
+
+input {
+	margin: 1em;
+	background: #B084FC;
+	border-color: black;
+	color: black;
+	font-size: 1.8em;
+	border-radius: 5px;
+	font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+.btn-enviar {
+	padding: 10px;
+	background: blueviolet;
+	border-color: blueviolet;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+h2 {
+	margin-bottom: 1em;
+	font-size: 35px;
+}
+
+p {
+	margin: .5em;
+	font-size: 13px;
+}
+
+@media screen and (max-width: 950px) {
+
+	input {
+		margin: .9em;
+		font-size: 1.3em;
+	
+	}
+
+	.btn-enviar {
+		padding: 8px;
+		font-size: .9em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width:300px) {
+
+	body {
+		background: #823BFF;
+	}
+	input {
+		margin: .9em;
+		font-size: .9em;
+	
+	}
+	div {
+		min-height: 90vh;
+	}
+	form {
+		padding: 2em;
+	}
+
+	.btn-enviar {
+		padding: 4px;
+		font-size: .7em;
+	}
+
+	h2 {
+		font-size: 1.3em;
+	}
+
+	p {
+		font-size: 10px;
+	}
+}
