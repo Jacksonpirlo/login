@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
@@ -13,11 +13,12 @@
 </head>
 <body>
 <div>
-  <form>
+  <form action="./php/form.php" method="post">
     <h2> BIENVENIDO A | S . T . V </h2>
-    <input id="text" type="text" name="" placeholder="INGRESE SU NOMBRE" formmethod="post">
+    <input id="text" type="text" name="name" placeholder="INGRESE SU NOMBRE" formmethod="post">
      <input id="email" type="email" name="email" placeholder="CORREO">
-    <input id="password" type="password" name="password" placeholder="CONTRASEÑA">
+     <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
+    <!-- <input id="password" type="password" name="password" placeholder="CONTRASEÑA"> -->
     <input type="submit" name="button" placeholder="Entrar" class="btn-enviar" id="submit">
     <p>Estoy deacuerdo con terminos y condiciones</p>
   </form>
